@@ -1,0 +1,14 @@
+<!-- This is template for home which will  inherit base.html -->
+{% extends "base.html" %}
+{% block title %} Create Home Sie {% endblock %}
+{% block body %}
+    <h2>Submit Url</h2>
+    <form action="" method=post>
+        {% if error %}
+        <p class="error"><strong> Error:</strong> {{error}} </p>
+        {% endif %}
+
+        <input type="text" name ="url" value = "{{url}}" class=urlinput>
+        <input type="submit" value="home">
+    </form>
+{% endblock %}
