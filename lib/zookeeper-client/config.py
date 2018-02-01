@@ -3,7 +3,7 @@ from collections import OrderedDict
 import json
 import zlib
 
-def get_config(log, zk, zk_path, dump=True)
+def get_config(log, zk, zk_path, dump=True):
     
     conf, stat = zk.get(zk_path)
     
